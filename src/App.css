@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-section {
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-image: url(/src/assets/background\ page.png);
+    gap: 20px;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    width: 100%;
+}
+
+.div-logo {
+display: flex;
+justify-content: center;
+height: 350px;
+}
+
+.nav-form {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.nav-input {
+    width: 400px;
+    border: 3px solid #14f557;
+    height: 35px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+.nav-form button {
+    border: 3px solid #14f557;
+    background-color: #98f1b6af;
+    color: white;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0 20px 0;
+}
+
+.decrement-button {
+    border-radius: 50% 0 0 50%;
+    padding: 10px;
+    width: 80px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid #14f557;
+    text-align: center;
+    cursor: pointer;
+}
+.increment-button {
+    border-radius: 0 50% 50% 0;
+    padding: 10px;
+    width: 80px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid #14f557;
+    cursor: pointer;
+}
+.nav-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-location {
+    display: flex;
+    width: 600px;
+    height: 100px;
+    color: white;
+    border: 3px solid #578df3af;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.residents-list {
+    display: flex;
+    margin-left: 150px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.resident-info {
+    width: 320px;
+    height: 465px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid #14f557;
+}
+.resident-info img {
+    width: 100%;
+    border-bottom: 3px solid #14f557;
+}
+.resident-info h2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.resident-info p {
+    margin: 10px 0 0 10px;
+
+}
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 5px;
+    margin: 250px 0 0 100px;
+    font-size: 15px;
+    width: 120px;
+    border: 3px solid #14f557;
+    background-color: rgb(92, 85, 85);
+    gap: 7px;
+    opacity: 80%;
+}
+.alive {
+    background-color: #14f557;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.dead {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.unknown {
+    background-color: grey;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
