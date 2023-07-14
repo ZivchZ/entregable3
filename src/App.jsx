@@ -44,7 +44,7 @@ function App() {
     <>
     <section className='first-section'>
       <div className='div-logo'>
-          <img src="/public/logo.svg" alt="logo" />
+          <img src="./public/images/logo.svg" alt="logo" />
       </div>
       <nav>
         <div className='nav-elements'>
