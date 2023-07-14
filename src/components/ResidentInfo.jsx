@@ -7,7 +7,6 @@ const ResidentInfo = ({url}) => {
 
     useEffect(() => {
 
-        
         axios
         .get(url)
         .then(resp => {

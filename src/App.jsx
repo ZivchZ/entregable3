@@ -96,7 +96,6 @@ function App() {
                   <button className='increment-button' onClick={() => (setPage(page +1))}>Siguiente</button>
                 </div>
     </section>
-                
     </>
   )
 }
