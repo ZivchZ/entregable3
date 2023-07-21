@@ -15,7 +15,7 @@ function App() {
     const lastIndex = elementsForPage * page
     const firstIndex = lastIndex - elementsForPage
 
-    const elementsPagined = searchId.residents?.slice(firstIndex, lastIndex)
+    const elementsPagined = location.residents?.slice(firstIndex, lastIndex)
 
     useEffect(() => {
 
@@ -34,7 +34,7 @@ function App() {
 
         axios.get(`https://rickandmortyapi.com/api/location/${searchId}`)
         .then(resp => {
-            setSearchId(resp.data)
+            setLocation(resp.data)
             console.log(resp.data)
         })
         .catch(error => console.error(error))
@@ -44,7 +44,7 @@ function App() {
     <>
     <section className='first-section'>
       <div className='div-logo'>
-          <img src="/logo.svg" alt="logo" />
+          <img src="images/logo.svg" alt="logo" />
       </div>
       <nav>
         <div className='nav-elements'>
@@ -69,7 +69,7 @@ function App() {
 
                 <div className='info-location'>
                   <Location
-                    info={searchId}
+                    info={location}
                   />
                 </div>
         </div>
